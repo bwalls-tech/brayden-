@@ -1,0 +1,11 @@
+# Exported from Render on 2025-02-17T06:08:32Z
+services:
+- type: web
+  name: bmwalls
+  runtime: elixir
+  repo: https://github.com/bwalls-tech/bmwalls
+  plan: free
+  region: oregon
+  buildCommand: mix phx.digest
+  startCommand: npm run build && npm start
+version: "1"
